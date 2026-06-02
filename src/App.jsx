@@ -229,7 +229,7 @@ function App() {
   const selectedDocsCount = Object.values(selectedTargetDocs).filter(Boolean).length;
 
   // Booking Form States
-  const [formData, setFormData] = useState({ presentName: "", proposedName: "", phone: "", email: "", reason: "", urgent: "No" });
+  const [formData, setFormData] = useState({ presentName: "", proposedName: "", phone: "", reason: "", urgent: "No" });
   const [showSuccess, setShowSuccess] = useState(false);
 
   // Toggle target document
@@ -266,12 +266,11 @@ function App() {
       `✍️ *Proposed Name:* ${formData.proposedName}\n` +
       `⚡ *Immediate Change Required:* ${formData.urgent === 'Yes' ? 'Yes, Urgent/Tatkaal Needed' : 'No, Normal Timeline'}\n` +
       `📞 *Phone:* ${formData.phone}\n` +
-      `✉️ *Email:* ${formData.email || 'Not Provided'}\n` +
       `📝 *Reason for Change:* ${formData.reason || 'Not Provided'}\n` +
       `📋 *Documents to Update:* ${docs || 'None Selected'}\n\n` +
       `Please provide the customized price quote and checklist. Thank you!`;
 
-    const whatsappUrl = `https://wa.me/918590290105?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/917994153999?text=${encodeURIComponent(message)}`;
     
     // Launch WhatsApp redirect in a new tab
     window.open(whatsappUrl, '_blank');
@@ -976,15 +975,6 @@ function App() {
                     />
                   </div>
 
-                  <div className="form-group">
-                    <label>Email Address (Optional)</label>
-                    <input 
-                      type="email" 
-                      placeholder="e.g. mohan@example.com" 
-                      value={formData.email || ""}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    />
-                  </div>
 
                   <div className="form-group">
                     <label>Reason for Name Change</label>
@@ -1021,8 +1011,7 @@ function App() {
               <div className="contact-info">
                 <h3>Contact Our Support Team</h3>
                 <p className="contact-detail-line">We provide premium, 100% online legal scoping and document scrutiny assistance across Ernakulam and the entire state of Kerala.</p>
-                <p className="contact-detail-line"><strong>📞 Hotline:</strong> +91 98765 43210</p>
-                <p className="contact-detail-line"><strong>✉️ Support Email:</strong> info@namechangekochi.com</p>
+                <p className="contact-detail-line"><strong>📞 Hotline:</strong> +91 79941 53999</p>
                 <p className="contact-detail-line"><strong>🕒 Consultation Hours:</strong> Mon - Sat: 9:30 AM to 5:30 PM (Sunday Closed)</p>
               </div>
               <div className="map-mockup-wrapper">
@@ -1098,8 +1087,7 @@ function App() {
           <div className="footer-col-contact">
             <h4 className="footer-heading">Consultancy Support</h4>
             <p className="footer-contact-item">We provide premium document scrutiny and official Gazette filing assistance virtually across Ernakulam and the entire state of Kerala.</p>
-            <p className="footer-contact-item"><strong>📞 Hotline:</strong> +91 98765 43210</p>
-            <p className="footer-contact-item"><strong>✉️ Support:</strong> info@namechangekochi.com</p>
+            <p className="footer-contact-item"><strong>📞 Hotline:</strong> +91 79941 53999</p>
           </div>
         </div>
 
